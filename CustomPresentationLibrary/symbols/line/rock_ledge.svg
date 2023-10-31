@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="rock_shore.svg"
+   inkscape:version="1.0beta1 (fe3e306, 2019-09-17)"
+   id="svg2424"
+   version="1.1"
+   viewBox="0 -0.26 2.511 1.48"
+   height="1.48mm"
+   width="2.511mm">
+  <defs
+     id="defs2418" />
+  <sodipodi:namedview
+     fit-margin-bottom="0"
+     fit-margin-right="0"
+     fit-margin-left="0"
+     fit-margin-top="0"
+     inkscape:guide-bbox="true"
+     showguides="true"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="1912"
+     inkscape:window-height="1027"
+     inkscape:window-width="1920"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="svg2424"
+     inkscape:document-units="mm"
+     inkscape:cy="2.631"
+     inkscape:cx="11.65"
+     inkscape:zoom="12.98"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base">
+    <sodipodi:guide
+       id="guide3984"
+       orientation="0,-1"
+       position="3.953,1.195" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata2421">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     inkscape:connector-curvature="0"
+     d="M 0.4571,0.8955 C 0.6351,0.6315 0.8451,0.0663 0.6711,0.0257 C 0.5211,-0.1166 0.2001,-0.1946 0.1091,0.0913 C 0,0.4745 0.0811,1.221 0.0811,1.221 M 1.007,0.4135 C 1.007,0.4135 1.101,-0.1806 1.333,-0.1236 M 1.557,-0.0686 C 1.304,-0.1306 0.8381,-0.4496 0.7341,0.1413 M 2.047,0.1543 C 2.118,-0.1356 1.696,-0.3426 1.605,-0.0567 C 1.529,0.1303 1.343,0.8045 1.343,0.8045 M 2.482,0.0563 C 2.264,-0.1006 2.123,-0.0317 2.004,0.2465 C 1.917,0.4315 1.759,0.7005 1.759,0.7005"
+     style="opacity:1;fill:none;stroke:#231f20;stroke-width:0.0998141;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.864;stroke-dasharray:none;stroke-opacity:1;stop-opacity:1"
+     id="path2601" />
+</svg>

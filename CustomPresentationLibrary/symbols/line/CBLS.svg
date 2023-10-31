@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2mm" height="1.87mm" viewBox="0 0 5.3214842 3.7354109">
+  <path
+   style="fill:none;stroke:#db4996;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+   d="m 0.11613133,1.9533065 c 0.81824658,-1.49972842 1.29237807,-3.2122188 2.55254777,0 1.070282,2.3826729 1.3889316,2.0095045 2.5379617,0"/>
+  <circle id="pivot_point" cx="0" cy="1.922" r="1" style="fill:none"/>
+</svg>

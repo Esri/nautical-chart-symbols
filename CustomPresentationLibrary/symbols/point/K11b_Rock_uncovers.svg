@@ -1,0 +1,10 @@
+<svg width="2mm" height="2mm" version="1.1" viewBox="-1.01 -1 2 2" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(-.46502 -.49098)">
+  <path d="m1.455 0.33631v0.30932l-1-0.096279v-0.11608" style="fill:#231f20;stroke-width:1.876"/>
+  <path d="m-0.54497 0.33631v0.30932l1-0.096279v-0.11608" style="fill:#231f20;stroke-width:1.876"/>
+  <path d="m-0.17101-0.35335 0.25208-0.15568 0.42142 0.9703-0.094932 0.058723" style="fill:#231f20;stroke-width:1.876"/>
+  <path d="m0.82899 1.4903 0.25208-0.15568-0.57858-0.87333-0.094933 0.058723" style="fill:#231f20;stroke-width:1.876"/>
+  <path d="m0.82899-0.50903 0.25208 0.15568-0.57858 0.87333-0.094933-0.058723" style="fill:#231f20;stroke-width:1.876"/>
+  <path d="m-0.17101 1.3353 0.25208 0.15568 0.42142-0.9703-0.094933-0.058723" style="fill:#231f20;stroke-width:1.876"/>
+ </g>
+</svg>

@@ -1,0 +1,26 @@
+<svg width="2.6mm" height="2.6007mm" version="1.1" viewBox="-1.3 -1.3 2.6 2.6007" xmlns="http://www.w3.org/2000/svg">
+ <path d="m-1.2914 0.0051358c0-0.7179 0.58173-1.3003 1.2996-1.3003 0.71826 0 1.3003 0.58244 1.3003 1.3003 0 0.7179-0.58208 1.3003-1.3003 1.3003-0.7179 0-1.2996-0.58244-1.2996-1.3003" style="fill:#d1ddef"/>
+ <path d="m0.55819-0.074591v0.15981l-0.54998-0.049742v-0.059972" style="fill:#231f20"/>
+ <path d="m-0.54177-0.074591v0.15981l0.54998-0.049742v-0.059972" style="fill:#231f20"/>
+ <path d="m-0.3361-0.4309 0.13864-0.080433 0.23177 0.5013-0.052211 0.030339" style="fill:#231f20"/>
+ <path d="m0.21388 0.5216 0.13864-0.080433-0.31821-0.4512-0.052211 0.030339" style="fill:#231f20"/>
+ <path d="m0.21388-0.51133 0.13864 0.080433-0.31821 0.4512-0.052211-0.030339" style="fill:#231f20"/>
+ <path d="m-0.3361 0.44152 0.13864 0.080433 0.23177-0.5013-0.052211-0.030339" style="fill:#231f20"/>
+ <circle cx="1.2872" cy="-.24767" r=".129" style="fill:#231f20;stroke-width:.15078"/>
+ <circle cx="-.92527" cy=".91245" r=".129" style="fill:#231f20;stroke-width:.15078"/>
+ <circle cx="-1.1922" cy=".52745" r=".129" style="fill:#231f20;stroke-width:.15078"/>
+ <circle cx="-1.2897" cy=".024391" r=".129" style="fill:#231f20;stroke-width:.15078"/>
+ <circle cx="-1.2179" cy="-.46841" r=".129" style="fill:#231f20;stroke-width:.15078"/>
+ <circle cx="-.95607" cy="-.85854" r=".129" style="fill:#231f20;stroke-width:.15078"/>
+ <circle cx="-.5762" cy="-1.1563" r=".129" style="fill:#231f20;stroke-width:.15078"/>
+ <circle cx="-.11421" cy="-1.2897" r=".129" style="fill:#231f20;stroke-width:.15078"/>
+ <circle cx=".35806" cy="-1.2435" r=".129" style="fill:#231f20;stroke-width:.15078"/>
+ <circle cx=".78412" cy="-1.0382" r=".129" style="fill:#231f20;stroke-width:.15078"/>
+ <circle cx="1.1075" cy="-.7148" r=".129" style="fill:#231f20;stroke-width:.15078"/>
+ <circle cx="-.53601" cy="1.1845" r=".129" style="fill:#231f20;stroke-width:.15078"/>
+ <circle cx="-.074015" cy="1.3128" r=".129" style="fill:#231f20;stroke-width:.15078"/>
+ <circle cx=".39399" cy="1.2512" r=".129" style="fill:#231f20;stroke-width:.15078"/>
+ <circle cx=".82005" cy="1.0305" r=".129" style="fill:#231f20;stroke-width:.15078"/>
+ <circle cx="1.1285" cy=".66562" r=".129" style="fill:#231f20;stroke-width:.15078"/>
+ <circle cx="1.2923" cy=".22885" r=".129" style="fill:#231f20;stroke-width:.15078"/>
+</svg>

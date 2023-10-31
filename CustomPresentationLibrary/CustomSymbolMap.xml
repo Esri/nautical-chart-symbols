@@ -1,0 +1,1024 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- <ArcGISRelease edition="11.2" patch="0" /> -->
+<!-- <Comments>Operator options/>
+	<Comments>Rule type A operators
+		equal
+		notEqual
+		lt (less than)
+		lte (less than or equal to)
+		gt (greater than)
+		gte (greater than or equal to)
+		between
+			Requires two values. Returns true if attribute value is greater than or equal to
+			value 1 and less than or equal to value 2.
+		Like
+			Wildcard compare. Uses an ‘*’ as a wildcard character.
+		notLike
+	</Comments>
+	<Comments>Rule type L operators
+		equal
+			Multiple values allowed. Evaluates to true if all the values match all of the
+			attribute values regardless of sequence.
+		notEqual
+		containsAny
+			Multiple values allowed. Evaluates to true if any of the values match regardless
+			of sequence.
+		containsNone
+			Multiple values allowed. Evaluates to true if none of the values match regardless
+			of sequence.
+		containsAll
+			Multiple values allowed. Evaluates to true if all of the values match regardless of
+			sequence.
+		hasMultiple
+	</Comments>
+	<Comments>Rule type F operators
+		exists
+			returns true if the specified object matches a coincident feature of the current
+			feature
+		Fetch
+			returns true and fetches the specified object if it matches a coincident feature of
+			the current feature
+	</Comments>-->
+
+
+<conditionMap name="INT1" alias="INT 1" symbolScale="2.0" version="1.0" debug="false">
+
+    <feature object="BRIDGE" prim="3">
+        <condition functionName="bridge02"/>
+    </feature>
+
+    <feature object="BRIDGE" prim="2">
+        <condition functionName="bridge02"/>
+    </feature>
+
+	<feature object="BUAARE" prim="3">
+		<condition functionName="buaare01"/>
+	</feature>  
+  
+    <feature object="CBLOHD" prim="2">
+      <condition functionName="cblohd02"/>
+    </feature>
+<!--Sept2023 New object, cblsub02 file, L30_Cable.svg, L31_1_PowerCable.svg, L32_DisusedCable.svg and mooring cable  at 11.2-->	
+	<feature object="CBLSUB" prim="2">
+      <condition functionName="cblsub02"/>
+    </feature>	
+
+	<feature object="COALNE" prim="2">
+		<condition functionName="coalne01"/>
+	</feature>
+	
+<!-- June2023 Removed. DEPARE and DRGARE do not use the same file at 11.2 -->  
+<!-- 	<feature object="DEPARE,DRGARE" prim="3">
+		<condition functionName="depare03"/>
+	</feature> -->
+ 
+ <!--June2023 DEPARE is the only object using depare03 at 11.2-->
+ 	<feature object="DEPARE" prim="3">
+		<condition functionName="depare03"/>
+	</feature>
+<!--June2023 new lua file drgare02 at 11.2-->
+	<feature object="DRGARE" prim="3">
+        <condition functionName="drgare02"/>
+	</feature>
+	
+	<feature object="LNDARE" prim="1">
+		<condition functionName="lndare01"/>
+	</feature>
+
+	<feature object="LNDARE" prim="2">
+		<condition functionName="lndare01"/>
+	</feature>
+	
+	<feature object="LNDARE" prim="3">
+		<condition functionName="lndare01"/>
+	</feature>
+  
+    <feature object="LNDELV" prim="1">
+		<condition functionName="lndelv01"/>
+    </feature>
+<!--June2023 New at 11.2-->
+	<feature object="LNDELV" prim="2">
+		<condition functionName="lndelv01:lndelv02"/>
+    </feature>
+	
+	<feature object="RESARE" prim="3">
+		<condition functionName="resare04"/>
+	</feature>
+	
+	<feature prim="1" object="SBDARE">
+		<condition functionName="sbdare02"/>
+	</feature>
+	
+   <feature object="SBDARE" prim="3">
+        <condition functionName="sbdare01"/>
+    </feature>
+	
+<!--June2023 New slotop lua and symbols at 11.2 release-->
+	<feature object="SLOTOP" prim="2">
+        <condition functionName="slotop01"/>
+    </feature>
+	
+	 <feature object="SOUNDG" prim="1">
+		<condition functionName="sounding"/>
+    </feature>
+	
+    <feature object="SWPARE" prim="3">
+        <condition functionName="swpare01"/>
+    </feature>
+
+	
+	<feature object="ACHARE" prim="1">
+		<condition  symbolName="N10_Reported_anchorage.svg">
+			<rule type="A" field="CATACH" operator="equal" value="1"/>
+		</condition>
+	</feature>
+
+	<feature object="BCNLAT" prim="1">
+		<condition symbolName="Q90_Stake_pole.svg">
+			<rule type="A" field="BCNSHP" operator="equal" value="1"/>
+		</condition>
+		<condition symbolName="Q91_Port_hand_perch.svg">
+			<rule type="A" field="BCNSHP" operator="equal" value="1"/>
+			<rule type="A" field="CATLAM" operator="equal" value="1"/>
+		</condition>
+		<condition symbolName="Q91_Lateral_hand_perch.svg">
+			<rule type="A" field="BCNSHP" operator="equal" value="1"/>
+			<rule type="A" field="CATLAM" operator="equal" value="2"/>
+		</condition>
+		<condition symbolName="Q92_Withy_starboard.svg">
+			<rule type="A" field="BCNSHP" operator="equal" value="2"/>
+			<rule type="A" field="CATLAM" operator="equal" value="2"/>
+		</condition>
+		<condition symbolName="Q92_Withy_port.svg">
+			<rule type="A" field="BCNSHP" operator="equal" value="2"/>
+			<rule type="A" field="CATLAM" operator="equal" value="1"/>
+		</condition>
+		<condition symbolName="Q80_Beacon.svg">
+			<rule type="A" field="BCNSHP" operator="equal" value="NULL"/>
+		</condition>
+		<condition symbolName="Q111_Lattice_beacon.svg">
+			<rule type="A" field="BCNSHP" operator="equal" value="4"/>
+		</condition>
+	</feature>
+
+	<feature object="BCNSPP" prim="1">
+		<condition symbolName="Q90_Stake_pole.svg">
+			<rule type="A" field="BCNSHP" operator="equal" value="1"/>
+		</condition>
+	</feature>
+
+	<feature object="BCNCAR,BCNISD,BCNLAT,BCNSPP" prim="1">
+		<condition symbolName="Q80_Beacon.svg">
+			<rule type="A" field="BCNSHP" operator="equal" value="5"/>
+			<rule type="L" field="CATSPM" operator="notEqual" value="16"/>
+		</condition>
+		<condition symbolName="Q80_Beacon.svg">
+			<rule type="A" field="BCNSHP" operator="equal" value="5"/>
+			<rule type="L" field="CATSPM" operator="equal" value="NULL"/>
+		</condition>
+	</feature>
+
+
+	<feature object="BCNISD" prim="1">
+		<condition symbolName="Q90_Stake_pole.svg">
+			<rule type="A" field="BCNSHP" operator="equal" value="1"/>
+		</condition>
+		<condition symbolName="Q83_Beacon_submerged_rock.svg">
+			<rule type="A" field="OBJECTID" operator="equal" value="0"/>
+		</condition>
+	</feature>
+
+	<feature object="BCNCAR,BCNISD,BCNSAW,BCNSPP" prim="1">
+		<condition symbolName="Q92_Withy_port.svg">
+			<rule type="A" field="BCNSHP" operator="equal" value="2"/>
+		</condition>
+		<condition symbolName="Q110b_Beacon_tower.svg">
+			<rule type="A" field="BCNSHP" operator="equal" value="3"/>
+			<rule type="L" field="COLOUR" operator="equal" value="4"/>
+		</condition>
+		<condition symbolName="Q110a_Beacon_tower.svg">
+			<rule type="A" field="BCNSHP" operator="equal" value="3"/>
+			<rule type="L" field="COLOUR" operator="notEqual" value="4"/>
+		</condition>
+		<condition symbolName="Q111_Lattice_beacon.svg">
+			<rule type="A" field="BCNSHP" operator="equal" value="4"/>
+		</condition>
+		<condition symbolName="Q100_cairn.svg">
+			<rule type="A" field="BCNSHP" operator="equal" value="6"/>
+		</condition>
+		<condition symbolName="Q80_Beacon.svg">
+			<rule type="A" field="BCNSHP" operator="equal">
+				<value>7</value>
+				<value>NULL</value>
+			</rule>
+		</condition>
+		<condition symbolName="Q110b_Beacon_tower.svg">
+			<rule type="A" field="BCNSHP" operator="equal" value="3"/>
+			<rule type="A" field="COLOUR" operator="equal" value="4"/>
+			<rule type="F" object="TOPMAR" operator="exists" display="true"/>
+		</condition>
+		<condition symbolName="Q110a_beacon_tower.svg">
+			<rule type="A" field="BCNSHP" operator="equal" value="3"/>
+			<rule type="A" field="COLOUR" operator="notEqual" value="4"/>
+			<rule type="F" object="TOPMAR" operator="exists" display="true"/>
+		</condition>
+		<condition symbolName="Q111_Lattice_beacon.svg">
+			<rule type="A" field="BCNSHP" operator="equal" value="4"/>
+			<rule type="F" object="TOPMAR" operator="exists" display="true"/>
+		</condition>
+		<condition symbolName="Q80_Beacon.svg">
+			<rule type="A" field="BCNSHP" operator="equal">
+				<value>7</value>
+				<value>NULL</value>
+			</rule>
+			<rule type="F" object="TOPMAR" operator="exists" display="true"/>
+		</condition>
+		<condition symbolName="P4_lighted_beacon.svg">
+			<rule type="A" field="BCNSHP" operator="equal">
+				<value>NULL</value>
+				<value>1</value>
+				<value>2</value>
+				<value>5</value>
+				<value>6</value>
+				<value>7</value>
+			</rule>
+			<rule type="F" object="TOPMAR" operator="exists" display="true"/>
+			<rule type="F" object="LIGHTS" operator="exists" display="true"/>
+		</condition>
+	</feature>
+
+	<feature object="BOYCAR,BOYISD,BOYLAT,BOYSAW,BOYSPP" prim="1">
+		<condition symbolName="Q23a_Pillar_buoy.svg">
+			<rule type="A" field="BOYSHP" operator="equal" value="NULL"/>
+		</condition>
+		<condition symbolName="Q20b_Conical_buoy.svg">
+			<rule type="A" field="BOYSHP" operator="equal" value="1"/>
+			<rule type="A" field="COLOUR" operator="equal">
+				<value>2</value>
+				<value>4</value>
+			</rule>
+		</condition>
+		<condition symbolName="Q20a_Conical_buoy.svg">
+			<rule type="A" field="BOYSHP" operator="equal" value="1"/>
+			<rule type="L" field="COLOUR" operator="hasMultiple"/>
+		</condition>
+		<condition symbolName="Q20a_Conical_buoy.svg">
+			<rule type="A" field="BOYSHP" operator="equal" value="1"/>
+			<rule type="A" field="COLOUR" operator="equal">
+				<value>NULL</value>
+				<value>1</value>
+				<value>3</value>
+				<value>5</value>
+				<value>6</value>
+				<value>7</value>
+				<value>8</value>
+				<value>9</value>
+				<value>10</value>
+				<value>11</value>
+				<value>12</value>
+				<value>13</value>
+			</rule>
+		</condition>
+		<condition symbolName="Q21b_Can_buoy.svg">
+			<rule type="A" field="BOYSHP" operator="equal" value="2"/>
+			<rule type="A" field="COLOUR" operator="equal">
+				<value>2</value>
+				<value>4</value>
+				</rule>
+		</condition>
+		<condition symbolName="Q21a_Can_buoy.svg">
+			<rule type="A" field="BOYSHP" operator="equal" value="2"/>
+			<rule type="L" field="COLOUR" operator="hasMultiple"/>
+		</condition>
+		<condition symbolName="Q21a_Can_buoy.svg">
+			<rule type="A" field="BOYSHP" operator="equal" value="2"/>
+			<rule type="A" field="COLOUR" operator="equal">
+				<value>NULL</value>
+				<value>1</value>
+				<value>3</value>
+				<value>5</value>
+				<value>6</value>
+				<value>7</value>
+				<value>8</value>
+				<value>9</value>
+				<value>10</value>
+				<value>11</value>
+				<value>12</value>
+				<value>13</value>
+			</rule>
+		</condition>
+		<condition symbolName="Q24_Spar_buoy.svg">
+			<rule type="A" field="BOYSHP" operator="equal" value="5"/>
+		</condition>
+		<condition symbolName="Q25a_Barrel_buoy.svg">
+			<rule type="A" field="BOYSHP" operator="equal" value="6"/>
+		</condition>
+		<condition symbolName="Q23a_Pillar_buoy.svg">
+			<rule type="A" field="BOYSHP" operator="equal" value="4"/>
+			<rule type="L" field="COLOUR" operator="hasMultiple"/>
+		</condition>
+		<condition symbolName="Q23a_Pillar_buoy.svg">
+			<rule type="A" field="BOYSHP" operator="equal" value="4"/>
+			<rule type="A" field="COLOUR" operator="equal">
+				<value>NULL</value>
+				<value>1</value>
+				<value>3</value>
+				<value>5</value>
+				<value>6</value>
+				<value>7</value>
+				<value>8</value>
+				<value>9</value>
+				<value>10</value>
+				<value>11</value>
+				<value>12</value>
+				<value>13</value>
+			</rule>
+		</condition>
+		<condition symbolName="Q22b_Spherical_buoy.svg">
+			<rule type="A" field="BOYSHP" operator="equal" value="3"/>
+			<rule type="A" field="COLOUR" operator="equal">
+				<value>2</value>
+				<value>4</value>
+			</rule>
+		</condition>
+		<condition symbolName="Q22a_Spherical_buoy.svg">
+			<rule type="A" field="BOYSHP" operator="equal" value="3"/>
+			<rule type="L" field="COLOUR" operator="hasMultiple"/>
+		</condition>
+		<condition symbolName="Q22a_Spherical_buoy.svg">
+			<rule type="A" field="BOYSHP" operator="equal" value="3"/>
+			<rule type="A" field="COLOUR" operator="equal">
+				<value>NULL</value>
+				<value>1</value>
+				<value>3</value>
+				<value>5</value>
+				<value>6</value>
+				<value>7</value>
+				<value>8</value>
+				<value>9</value>
+				<value>10</value>
+				<value>11</value>
+				<value>12</value>
+				<value>13</value>
+			</rule>
+		</condition>
+    <!--30SEP2014 Bug 66033 Added Q22c Spherical buoy condition-->
+		<condition symbolName="Q22c_Spherical_buoy.svg">
+			<rule type="A" field="BOYSHP" operator="equal" value="3"/>
+			<rule type="A" field="COLPAT" operator="equal" value="2"/>
+		</condition>
+		<condition symbolName="Q23b_Pillar_buoy.svg">
+			<rule type="A" field="BOYSHP" operator="equal" value="4"/>
+			<rule type="A" field="COLPAT" operator="equal" value="2"/>
+			<rule type="A" field="COLOUR" operator="equal">
+				<value>NULL</value>
+				<value>1</value>
+				<value>3</value>
+				<value>5</value>
+				<value>6</value>
+				<value>7</value>
+				<value>8</value>
+				<value>9</value>
+				<value>10</value>
+				<value>11</value>
+				<value>12</value>
+				<value>13</value>
+			</rule>
+		</condition>
+		<condition symbolName="Q23b_Pillar_buoy.svg">
+			<rule type="A" field="BOYSHP" operator="equal" value="4"/>
+			<rule type="A" field="COLPAT" operator="equal" value="2"/>
+			<rule type="L" field="COLOUR" operator="hasMultiple"/>
+		</condition>
+		<condition symbolName="Q23c_Pillar_buoy.svg">
+			<rule type="A" field="BOYSHP" operator="equal" value="4"/>
+			<rule type="A" field="COLOUR" operator="equal">
+				<value>2</value>
+				<value>4</value>
+			</rule>
+		</condition>
+		<condition symbolName="Q26_Super_buoy.svg">
+			<rule type="A" field="BOYSHP" operator="equal" value="7"/>
+		</condition>
+	</feature>
+
+	<feature object="BOYSPP" prim="1">
+		<condition symbolName="Q26_Super_buoy.svg">
+			<rule type="A" field="CATSPM" operator="equal">
+				<value>9</value>
+				<value>15</value>
+		</rule>
+		</condition>
+	</feature>
+
+	<feature object="BOYINB" prim="1">
+		<condition symbolName="L16_tanker_mooring.svg"/>
+	</feature>
+
+	<feature object="BUISGL" prim="1">
+		<condition symbolName="E10_Church.svg">
+			<rule type="A" field="FUNCTN" operator="equal" value="20"/>
+		</condition>
+	</feature>
+  
+	<feature object="CRANES" prim="1">
+		<condition symbolName="F53_Crane.svg"/>
+	</feature>
+
+	<feature object="DAYMAR" prim="1">
+		<condition symbolName="Q101_Mark.svg"/>
+	</feature>
+
+	<feature object="FOGSIG" prim="1" subPriority="1">
+		<condition symbolName="R1_Fog_signal.svg"/>
+	</feature>
+
+	<feature object="HRBFAC" prim="1">
+		<condition symbolName="F10_Fishing_harbor.svg">
+			<rule type="A" field="CATHAF" operator="equal" value="4"/>
+		</condition>
+		<condition symbolName="F11_1_Boat_harbor.svg">
+			<rule type="A" field="CATHAF" operator="equal" value="5"/>
+		</condition>
+	</feature>
+
+	<feature object="TOPMAR" prim="1">
+		<condition symbolName="Q9_Arrow.svg">
+			<rule type="A" field="TOPSHP" operator="equal">
+				<value>1</value>
+				<value>15</value>
+				<value>24</value>
+			</rule>
+		</condition>
+		<condition symbolName="Q9_Arrow_filled.svg">
+			<rule type="A" field="TOPSHP" operator="equal">
+				<value>1</value>
+				<value>15</value>
+				<value>24</value>
+			</rule>
+			<rule type="A" field="COLOUR" operator="equal">
+				<value>2</value>
+				<value>4</value>
+			</rule>
+		</condition>
+		<condition symbolName="Q9_Arrow_DownOpen.svg">
+			<rule type="A" field="TOPSHP" operator="equal">
+				<value>2</value>
+				<value>16</value>
+				<value>25</value>
+			</rule>
+		</condition>
+		<condition symbolName="Q9_Arrow_DownFilled.svg">
+			<rule type="A" field="TOPSHP" operator="equal">
+				<value>2</value>
+				<value>16</value>
+				<value>25</value>
+			</rule>
+			<rule type="A" field="COLOUR" operator="equal">
+				<value>2</value>
+				<value>4</value>
+			</rule>
+		</condition>
+		<condition symbolName="Q130_5_Safe_water_mark.svg">
+			<rule type="A" field="TOPSHP" operator="equal">
+				<value>3</value>
+				<value>26</value>
+			</rule>
+		</condition>
+		<condition symbolName="Q130_5_Closed_safe_water_mark.svg">
+			<rule type="A" field="TOPSHP" operator="equal">
+				<value>3</value>
+				<value>26</value>
+			</rule>
+			<rule type="A" field="COLOUR" operator="equal">
+				<value>2</value>
+				<value>4</value>
+			</rule>
+		</condition>
+		<condition symbolName="Q130_4_Isolated_danger_mark.svg">
+			<rule type="A" field="TOPSHP" operator="equal" value="4"/>
+		</condition>
+		<condition symbolName="Q9_Cylinder.svg">
+			<rule type="A" field="TOPSHP" operator="equal">
+				<value>5</value>
+				<value>6</value>
+				<value>21</value>
+			</rule>
+		</condition>
+		<condition symbolName="Q9_Cylinder_filled.svg">
+			<rule type="A" field="TOPSHP" operator="equal">
+				<value>5</value>
+				<value>6</value>
+				<value>21</value>
+			</rule>
+			<rule type="A" field="COLOUR" operator="equal">
+				<value>2</value>
+				<value>4</value>
+			</rule>
+		</condition>
+		<condition symbolName="Q130_6_Special_mark.svg">
+			<rule type="A" field="TOPSHP" operator="equal" value="7"/>
+		</condition>
+		<condition symbolName="Q9_Cross.svg">
+			<rule type="A" field="TOPSHP" operator="equal" value="8"/>
+		</condition>
+		<condition symbolName="Q9_Rhombus.svg">
+			<rule type="A" field="TOPSHP" operator="equal">
+				<value>9</value>
+				<value>12</value>
+			</rule>
+		</condition>
+		<condition symbolName="Q130_3_topmark_W.svg">
+			<rule type="A" field="TOPSHP" operator="equal" value="10"/>
+		</condition>
+		<condition symbolName="Q130_3_topmark_E.svg">
+			<rule type="A" field="TOPSHP" operator="equal" value="11"/>
+		</condition>
+		<condition symbolName="Q130_3_topmark_N.svg">
+			<rule type="A" field="TOPSHP" operator="equal" value="13"/>
+		</condition>
+		<condition symbolName="Q130_3_topmark_S.svg">
+			<rule type="A" field="TOPSHP" operator="equal" value="14"/>
+		</condition>
+		<condition symbolName="Q9_Square.svg">
+			<rule type="A" field="TOPSHP" operator="equal" value="19"/>
+		</condition>
+    <!--<condition symbolName="Q130 Non-IALA topmark">
+      <rule type="A" field="OBJECTID" operator="equal" value="0"/>
+      <rule type="A" field="TOPSHP" operator="equal">
+        <value>17</value>
+        <value>18</value>
+        <value>20</value>
+        <value>22</value>
+        <value>23</value>
+        <value>27</value>
+        <value>28</value>
+        <value>29</value>
+        <value>30</value>
+        <value>31</value>
+        <value>32</value>
+        <value>33</value>
+        <value>NULL</value>
+      </rule>
+    </condition>-->
+<!--TOPMARK offset and angle for Buoys with a buoy shape-->
+		<condition>
+			<rule type="F" object="BOY*" operator="fetch" display="true">
+				<condition xoffset="0.771" yoffset="-2.918" angle="15">
+					<rule type="A" field="BOY*.BOYSHP" operator="equal" value="4"/>
+				</condition>
+				<condition xoffset="0.771" yoffset="-2.918" angle="15">
+					<rule type="A" field="BOY*.BOYSHP" operator="equal" value="NULL"/>
+				</condition>
+				<condition xoffset="0.689" yoffset="-2.741" angle="15">
+					<rule type="A" field="BOY*.BOYSHP" operator="equal" value="5"/>
+				</condition>
+				<condition xoffset="0.438" yoffset="-1.753" angle="15">
+					<rule type="A" field="BOY*.BOYSHP" operator="equal" value="1"/>
+				</condition>
+				<condition xoffset="0.213" yoffset="-0.976" angle="15">
+					<rule type="A" field="BOY*.BOYSHP" operator="equal" value="2"/>
+				</condition>
+				<condition xoffset="0.35" yoffset="-1.35" angle="15">
+					<rule type="A" field="BOY*.BOYSHP" operator="equal" value="3"/>
+				</condition>
+				<condition xoffset="-0.17" yoffset="-1.12" angle="0">
+					<rule type="A" field="BOY*.BOYSHP" operator="equal" value="6"/>
+				</condition>
+				<condition yoffset="-1.1" angle="0">
+					<rule type="A" field="BOY*.BOYSHP" operator="equal" value="7"/>
+				</condition>
+			</rule>
+		</condition>
+
+<!--TOPMARK offset and angle for beacons with a beacon shape-->
+		<condition>
+			<rule type="F" object="BCN*" operator="fetch" display="true">
+				<condition yoffset="-1.75" angle="0">
+					<rule type="A" field="BCN*.BCNSHP" operator="equal" value="NULL"/>
+				</condition>
+				<condition yoffset="-2.75" angle="0">
+					<rule type="A" field="BCN*.BCNSHP" operator="equal" value="1"/>
+				</condition>
+				<condition xoffset="0.26" yoffset="-2.59" angle="0">
+					<rule type="A" field="BCN*.BCNSHP" operator="equal" value="2"/>
+				</condition>
+				<condition yoffset="-1.85000" angle="0">
+					<rule type="A" field="BCN*.BCNSHP" operator="equal" value="4"/>
+				</condition>
+				<condition yoffset="-1.75" angle="0">
+					<rule type="A" field="BCN*.BCNSHP" operator="equal" value="5"/>
+				</condition>
+				<condition yoffset="-1.54" angle="0">
+					<rule type="A" field="BCN*.BCNSHP" operator="equal" value="6"/>
+				</condition>
+				<condition yoffset="-1.75" angle="0">
+					<rule type="A" field="BCN*.BCNSHP" operator="equal" value="7"/>
+				</condition>
+				<condition yoffset="-1.75" angle="0">
+					<rule type="A" field="BCN*.BCNSHP" operator="equal" value="NULL"/>
+					<rule type="F" object="LIGHTS" operator="exists" display="true"/>
+				</condition>
+				<condition yoffset="-1.9" angle="0">
+					<rule type="A" field="BCN*.BCNSHP" operator="equal" value="3"/>
+				</condition>
+			</rule>
+		</condition>
+	</feature>
+
+	<feature object="RADRFL" prim="1">
+		<condition symbolName="S5_Radar_conspicuous.svg"/>
+	</feature>
+  
+	<feature object="RADSTA" prim="1">
+		<condition symbolName="S1_Ra_transponder_bn.svg"/>
+		<condition symbolName="S1_Ra_transponder_wLight.svg">
+			<rule type="F" object="LNDMRK,BCNCAR,BCNISD,BCNLAT,BCNSAW,BCNSPP,BOYCAR,BOYINB,BOYISD,BOYLAT,BOYSAW,BOYSPP,LIGHTS,LITFLT,LITVES" operator="exists" display="true"/>
+		</condition>
+	</feature>
+
+	<feature object="RDOSTA" prim="1">
+		<condition symbolName="S1_Ra_transponder_bn.svg"/>
+		<condition symbolName="S1_Ra_transponder_wLight.svg">
+			<rule type="F" object="LNDMRK,BCNCAR,BCNISD,BCNLAT,BCNSAW,BCNSPP,BOYCAR,BOYINB,BOYISD,BOYLAT,BOYSAW,BOYSPP,LIGHTS,LITFLT,LITVES" operator="exists" display="true"/>
+		</condition>
+	</feature>
+
+	<feature object="RDOCAL" prim="1">
+		<condition symbolName="M40_1b_Radio_calling_in.svg" angle="ORIENT"/>
+		<condition  symbolName="M40_1a_Radio_calling_in.svg" angle="ORIENT">
+			<rule type="A" field="TRAFIC" operator="equal" value="4"/>
+		</condition>
+	</feature>
+	<!--June2023 ROADWY is new at 11.2 release and D11_Roadway.svg line-->
+	<feature object="ROADWY" prim="2">
+		<condition functionName="roadwy01"/>
+	</feature>
+
+	<feature object="RTPBCN" prim="1">
+		<condition symbolName="S1_Ra_transponder_bn.svg"/>
+		<condition symbolName="S1_Ra_transponder_wLight.svg">
+			<rule type="F" object="LNDMRK,BCNCAR,BCNISD,BCNLAT,BCNSAW,BCNSPP,BOYCAR,BOYINB,BOYISD,BOYLAT,BOYSAW,BOYSPP,LIGHTS,LITFLT,LITVES" operator="exists" display="true"/>
+		</condition>
+	</feature>
+
+	<feature object="LIGHTS" prim="1">
+		<condition>
+			<rule type="A" field="SECTR1" operator="equal" value="NULL">
+				<condition functionName="lights:lights04" angle="135"/>
+				<condition symbolName="P64_Strip_light.svg">
+					<rule type="A" field="CATLIT" operator="equal" value="9"/>
+				</condition>
+				<!--30SEPT2014 added OFSPLF_OffshorePlatform to FREL query while fixing bug 66035 L17 Moored storage tanker-->
+				<!--26MAY2023 version 11.2 removed BOYLAT,BOYCAR,BOYSPP,BOYISD,BOYSAW,MORFAC,LITFLT,LITVES from Fetch relationship-->
+				<condition functionName="lights:lights01">
+					<rule type="F" object="BCNLAT,BCNISD,BCNCAR,BCNSPP,BCNSAW,PILPNT,SILTNK,LNDMRK,PYLONS,OFSPLF,BRIDGE" operator="exists" display="true"/>
+				</condition>
+				<condition functionName="lights:lights02">
+				<!--26MAY2023 version 11.2 added MORFAC,LITFLT,LITVES, to Fetch relationship so objects use italic label-->
+					<rule type="F" object="BOY*,MORFAC,LITFLT,LITVES" operator="exists" display="true"/>
+				</condition>
+				<condition symbolName="Light_Flare.svg" angle="10" functionName="lights:LightString">
+					<rule type="F" object="OFSPLF" operator="exists" display="true"/>
+				</condition>
+				<condition symbolName="P63_Flood_light.svg" functionName="lights:LightString">
+				  <rule type="A" field="CATLIT" operator="equal" value="8"/>
+				</condition>
+			</rule>
+		</condition>
+		<condition functionName="lights:lights03"><!--lua for sectored lights-->
+			<!--<rule type="A" field="SECTR1" operator="notEqual" value="NULL"/>-->
+			<rule type="S" functionName="lights:IsSectorLight" result="true"/>
+		</condition> 
+	</feature>
+
+	<feature object="LITFLT" prim="1">
+		<condition symbolName="Q30_Light_float.svg">
+			<rule type="A" field="COLOUR" operator="equal" value="4"/>
+		</condition>
+		<condition symbolName="Q31_Light_float.svg">
+			<rule type="A" field="COLOUR" operator="equal">
+				<value>3</value>
+				<value>NULL</value>
+			</rule>
+		</condition>
+	</feature>
+
+	<feature object="LITVES" prim="1">
+  <!--Q32 formerly P6 Light vessel. Can be Q26_Super_buoy as alternate-->
+		<condition symbolName="Q32_Light_vessel.svg"/>
+	</feature>
+
+	<feature object="LNDMRK" prim="1">
+		<condition symbolName="B22a_Fixed_point.svg"/>
+		<condition symbolName="B22b_Fixed_point.svg">
+			<rule type="A" field="CONVIS" operator="equal">
+				<value>2</value>
+				<value>NULL</value>
+			</rule>
+		</condition>
+		<condition symbolName="Q100_cairn.svg">
+			<rule type="A" field="CATLMK" operator="equal" value="1"/>
+		</condition>
+		<condition symbolName="E22_Chimney.svg">
+			<rule type="A" field="CATLMK" operator="equal" value="3"/>
+		</condition>
+		<condition symbolName="E31_Dish_aerial.svg">
+			<rule type="A" field="CATLMK" operator="equal" value="4"/>
+		</condition>
+		<condition symbolName="E27_Flagpole.svg">
+			<rule type="A" field="CATLMK" operator="equal">
+				<value>5</value>
+				<value>8</value>
+			</rule>
+		</condition>
+		<condition symbolName="E23_Flare_stack.svg">
+			<rule type="A" field="CATLMK" operator="equal" value="6"/>
+		</condition>
+		<condition symbolName="E28_Radio_mast.svg">
+			<rule type="A" field="CATLMK" operator="equal" value="7"/>
+			<rule type="A" field="FUNCTN" operator="equal">
+				<value>29</value>
+				<value>30</value>
+				<value>31</value>
+				<value>NULL</value>
+			</rule>
+<!-- 	  <rule type="A" field="CONVIS" operator="equal">
+        <value>1</value>
+        <value>NULL</value>
+      </rule> -->
+		</condition>
+		<condition symbolName="E20_Tower.svg">
+			<rule type="A" field="CATLMK" operator="equal" value="17"/>
+		</condition>
+		<condition symbolName="E29_Radio_tower.svg">
+			<rule type="A" field="CATLMK" operator="equal" value="17"/>
+			<rule type="L" field="FUNCTN" operator="containsAny">
+				<value>29</value>
+				<value>30</value>
+				<value>31</value>
+			</rule>
+		</condition>
+		<condition symbolName="E29_Radio_tower.svg">
+			<rule type="L" field="CATLMK" operator="containsAny" value="17"/>
+			<rule type="L" field="FUNCTN" operator="containsAny">
+				<value>29</value>
+				<value>30</value>
+				<value>31</value>
+			</rule>
+		</condition>
+		<condition symbolName="E24_Monument.svg">
+			<rule type="A" field="CATLMK" operator="equal" value="9"/>
+		</condition>
+		<condition symbolName="E25_Windmill.svg">
+			<rule type="A" field="CATLMK" operator="equal" value="18"/>
+		</condition>
+		<condition symbolName="E26_1_Wind_turbine.svg">
+			<rule type="A" field="CATLMK" operator="equal" value="19"/>
+		</condition>
+		<condition symbolName="E10_Church.svg">
+			<rule type="A" field="CATLMK" operator="equal">
+				<value>15</value>
+				<value>20</value>
+			</rule>
+			<rule type="A" field="FUNCTN" operator="equal">
+				<value>20</value>
+				<value>21</value>
+			</rule>
+		</condition>
+		<condition symbolName="E17_Mosque.svg">
+			<rule type="A" field="CATLMK" operator="equal" value="20"/>
+			<rule type="L" field="FUNCTN" operator="containsAny" value="26"/>
+		</condition>
+		<condition symbolName="E24_Monument.svg">
+			<rule type="A" field="CATLMK" operator="equal" value="14"/>
+		</condition>
+		<condition symbolName="P1_Light-fixed.svg">
+			<rule type="L" field="FUNCTN" operator="containsAny" value="33"/>
+			<rule type="F" object="LIGHTS" operator="exists" display="true"/>
+		</condition>
+		<condition symbolName="E20_Tower.svg">
+			<rule type="A" field="CATLMK" operator="equal" value="17"/>
+			<rule type="A" field="FUNCTN" operator="equal" value="NULL"/>
+		</condition>
+	</feature>
+  
+	<feature object="MARCUL" prim="1">
+		<condition symbolName= "K48_Marine_farm.svg"/>
+	</feature>
+
+	<feature object="MORFAC" prim="1">
+		<condition symbolName="Q40a_Mooring_buoy.svg">
+			<rule type = "A" field = "CATMOR" operator = "equal" value = "7"/>
+			<rule type = "A" field = "COLOUR" operator = "equal">
+				<value>1</value>
+				<value>3</value>
+				<value>5</value>
+				<value>6</value>
+				<value>7</value>
+				<value>8</value>
+				<value>9</value>
+				<value>10</value>
+				<value>11</value>
+				<value>12</value>
+				<value>13</value>
+			</rule>
+			<rule type = "A" field = "BOYSHP" operator = "equal">
+				<value>3</value>
+				<value>4</value>
+				<value>5</value>
+				<value>6</value>
+				<value>NULL</value>
+			</rule>
+		</condition>
+		<condition symbolName="Q40b_Mooring_buoy.svg">
+			<rule type = "A" field = "CATMOR" operator = "equal" value = "7"/>
+			<rule type = "A" field = "COLOUR" operator = "equal">                   
+				<value>2</value>
+				<value>4</value>
+				<value>NULL</value>  
+			</rule>
+			<rule type = "A" field = "BOYSHP" operator = "equal">
+				<value>3</value>
+				<value>4</value>
+				<value>5</value>
+				<value>6</value>
+				<value>NULL</value>
+			</rule>
+			<rule type = "A" field = "COLPAT" operator = "equal" value = "NULL"/>
+		</condition>
+		<condition symbolName="Q40a_Mooring_buoy.svg">
+			<rule type = "A" field = "CATMOR" operator = "equal" value = "7"/>
+			<rule type = "L" field = "COLOUR" operator = "hasMultiple"/>
+			<rule type = "A" field = "BOYSHP" operator = "equal">
+				<value>3</value>
+				<value>4</value>
+				<value>5</value>
+				<value>6</value>
+				<value>NULL</value>
+			</rule>
+			<rule type = "A" field = "COLPAT" operator = "notEqual" value = "NULL"/>
+		</condition>
+		<condition symbolName="Q40c_Mooring_buoy.svg">
+			<rule type = "A" field = "CATMOR" operator = "equal" value = "7"/>
+			<rule type = "A" field = "COLOUR" operator = "equal">
+				<value>1</value>
+				<value>3</value>
+				<value>5</value>
+				<value>6</value>
+				<value>7</value>
+				<value>8</value>
+				<value>9</value>
+				<value>10</value>
+				<value>11</value>
+				<value>12</value>
+				<value>13</value>
+				<value>NULL</value>
+			</rule>
+			<rule type = "A" field = "BOYSHP" operator = "equal" value = "2"/>
+		</condition>
+		<condition symbolName="Q40c_Mooring_buoy.svg">
+			<rule type = "A" field = "CATMOR" operator = "equal" value = "7"/>
+			<rule type = "L" field = "COLOUR" operator = "hasMultiple"/>
+			<rule type = "A" field = "BOYSHP" operator = "equal" value = "2"/>
+		</condition>
+		<condition symbolName="Q40d_Mooring_buoy.svg">
+			<rule type = "A" field = "CATMOR" operator = "equal" value = "7"/>
+			<rule type = "A" field = "COLOUR" operator = "equal">
+				<value>2</value>
+				<value>4</value>
+			</rule>
+			<rule type = "A" field = "BOYSHP" operator = "equal" value = "2"/>
+		</condition>
+		<condition  symbolName="F21_Deviation_dolphin.svg">
+			<rule type="A" field="CATMOR" operator="equal" value="2"/>
+		</condition>
+		<condition  symbolName="F20_Dolphin.svg">
+			<rule type="A" field="CATMOR" operator="equal" value="1"/>
+		</condition>
+		<condition symbolName="F22_Post.svg">
+			<rule type = "A" field = "CATMOR" operator = "equal">
+				<value>3</value>
+				<value>5</value>
+			</rule>
+		</condition>
+	</feature>
+
+	<feature object="OFSPLF" prim="1">
+		<condition  symbolName="L10_Offshore_platform.svg"/>
+	</feature>
+
+	<feature object="OBSTRN" prim="1">
+		<rule type = "A" field = "VALSOU" operator = "equal" value ="NULL">
+			<condition symbolName= "K1_Obstruction4mm_shoal.svg"/>
+		</rule>
+		<condition  symbolName="Q42_Ground_tackle.svg">
+			<rule type="A" field="CATOBS" operator="equal" value="9"/>
+		</condition>
+	</feature>
+	<!--06June2023 New obstnare01.lua file for prim 3 at 11.2 release. No new symbols-->
+   	<feature object="OBSTRN" prim="3">
+		<condition functionName="obstnare01"/>
+	</feature>
+	
+	<feature object="OSPARE" prim="3">
+		<condition functionName="ospare01"/>
+    </feature>
+	
+	<!--06June2023 New pipsol01.lua file for prim 2 at 11.2 release. New line symbols L40_pipeline_supply.svg and L41_pipeline_outfall_intake.svg -->
+ 	<feature object="PIPSOL" prim="2">
+		<condition functionName="pipsol01"/>
+    </feature>
+
+	<feature object="PILPNT" prim="1">
+		<condition  symbolName="F22_Post.svg"/>
+	</feature>
+
+	<feature object="PILBOP" prim="1">
+		<condition  symbolName="T1_Pilot_boarding_place.svg"/>
+	</feature>
+
+	<feature object="SLCONS" prim="1">
+		<condition symbolName="K1_Obstruction4mm_InDepthRange.svg">
+			<rule type="A" field="WATLEV" operator="equal" value="3"/>
+		</condition>
+	</feature>
+
+	<feature object="UWTROC" prim="1">
+		<condition symbolName= "K11b_Rock_uncovers.svg">
+			<rule type = "A" field = "WATLEV" operator = "equal" value = "4"/>
+		</condition>
+		<condition symbolName= "K12b_Rock_awash.svg">
+			<rule type = "A" field = "WATLEV" operator = "equal" value = "5"/>
+		</condition>
+		<condition symbolName= "K13a_Dangerous_underwater_rk.svg">
+			<rule type = "A" field = "WATLEV" operator = "equal" value = "3"/>
+			<rule type = "A" field = "EXPSOU" operator = "equal" value = "1"/>
+		</condition>
+		<condition symbolName= "K13b_Dangerous_underwater_rk.svg">
+			<rule type = "A" field = "WATLEV" operator = "equal" value = "3"/>
+			<rule type = "A" field = "VALSOU" operator = "equal" value ="NULL"/>
+		</condition>
+		<condition symbolName= "F22_Post.svg">
+			<rule type = "A" field = "CATOBS" operator = "equal" value = "10"/>
+		</condition>
+		<condition symbolName= "K31_Foul_ground.svg">
+			<rule type = "A" field = "CATOBS" operator = "equal" value = "7"/>
+		</condition>
+	</feature>
+
+	<feature object="WRECKS" prim="1">
+		<condition symbolName= "K29_Wreck_notdangerous.svg">
+			<rule type = "A" field = "CATWRK" operator = "equal" value = "1"/>
+		</condition>
+		<condition symbolName= "K25_Wreck_danger_no_depth.svg">
+			<rule type = "A" field = "CATWRK" operator = "equal" value = "2"/>
+		</condition>
+		<condition symbolName= "K31_Foul_ground.svg">
+			<rule type = "A" field = "CATWRK" operator = "equal" value = "3"/>
+		</condition>
+		<condition symbolName= "K25_Wreck_danger_no_depth.svg">
+			<rule type = "A" field = "CATWRK" operator = "equal" value = "4"/>
+		</condition>
+<!-- 	<condition symbolName= "K20_Wreck_showing_mast.svg">
+		<rule type = "A" field = "CATWRK" operator = "equal" value = "4"/>
+		<rule type = "A" field = "WATLEV" operator = "equal" value = "2"/>
+	</condition> -->
+<!-- 	<condition symbolName= "K21_Wreck_uncovers.svg">
+		<rule type = "A" field = "WATLEV" operator = "equal" value = "4"/>
+	</condition> -->
+		<condition symbolName= "K24_Wreck_showing_hull.svg">
+			<rule type = "A" field = "CATWRK" operator = "equal" value = "5"/>
+		</condition>
+	</feature>
+
+	<feature object="VEGATN" prim="1">
+		<condition symbolName= "C31_1_Deciduous_tree.svg">
+			<rule type="A" field = "CATVEG" operator = "equal" value= "20"/>
+		</condition>
+		<condition symbolName= "C31_2_Evergreen_tree.svg">
+			<rule type="A" field = "CATVEG" operator = "equal" value= "14"/>
+		</condition>
+		<condition symbolName= "C31_3_Conifer_tree.svg">
+			<rule type="A" field = "CATVEG" operator = "equal" value= "15"/>
+		</condition>
+		<condition symbolName= "C31_4_Palm_Tree.svg">
+			<rule type="A" field = "CATVEG" operator = "equal" value= "16"/>
+		</condition>
+		<condition symbolName= "C31_5_Nipa_palm.svg">
+			<rule type="A" field = "CATVEG" operator = "equal" value= "17"/>
+		</condition>
+		<condition symbolName= "C31_6_Casuarina.svg">
+			<rule type="A" field = "CATVEG" operator = "equal" value= "18"/>
+		</condition>
+		<condition symbolName= "C31_7_Filao.svg">
+			<rule type="A" field = "CATVEG" operator = "equal" value= "22"/>
+		</condition>
+		<condition symbolName= "C31_8_Eucalypt.svg">
+			<rule type="A" field = "CATVEG" operator = "equal" value= "19"/>
+		</condition>
+		<condition symbolName= "C32_Mangrove.svg">
+			<rule type="A" field = "CATVEG" operator = "equal" value= "21"/>
+		</condition>
+	</feature>
+</conditionMap>
