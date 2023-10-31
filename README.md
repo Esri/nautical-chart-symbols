@@ -28,7 +28,7 @@ The ServerConfiguration.xml file contains a CustomSymbology boolean to enable or
 * [ArcGIS Maritime server web help](https://enterprise.arcgis.com/en/maritime/)
 * [Esri Hydrographic Office](https://esriho.maps.arcgis.com/home/index.html)
 * [ArcGIS Maritime Community](https://community.esri.com/t5/arcgis-maritime/ct-p/arcgis-maritime)
-* [Email](maritime@esri.com)
+* [Maritime email](maritime@esri.com)
 * [twitter@esri](http://twitter.com/esri)
 
 ## Issues
