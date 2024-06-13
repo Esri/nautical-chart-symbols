@@ -29,12 +29,12 @@ function vertical_clearance(arguments, context, symbology)
 		format = '%d ft'
 	end
 
-	local params = {type='Text',color='', textGroup=11, xoffset=2, yoffset=1}--offsets changed from x and y = 0
+	local params = {type='Text',color='', textGroup=11, xoffset=2, yoffset=1, linked=false}--offsets changed from x and y = 0 linked is false to separate the object name text from the vertical clearance text instruction. Update 11.2 patch1.
 
 	local collection = symbology.collections[1]
 
 	if label == 'VERCLR' then
-		--collection:add_symbology_instruction({type='Symbol', Name='D22_Vert_clr.svg'})
+		collection:add_symbology_instruction({type='Symbol', xoffset=2, yoffset=1, Name='D22_Vert_clr.svg'})
 		params.text = string.format(format,value)
 		collection:add_symbology_instruction(params)
 	elseif label == 'VERCOP' then
@@ -42,7 +42,7 @@ function vertical_clearance(arguments, context, symbology)
 		params.text = string.format(format, value)--edit from 'clr op '
 		collection:add_symbology_instruction(params)
 	elseif label == 'VERCCL' then
-		--collection:add_symbology_instruction({type='Symbol', Name='D22_Vert_clr.svg'})
+		collection:add_symbology_instruction({type='Symbol', Name='D22_Vert_clr.svg'})
 		params.text = string.format(format, value) --edit from 'clr cl'
 		collection:add_symbology_instruction(params)
 	elseif label == 'VERCSA' then
