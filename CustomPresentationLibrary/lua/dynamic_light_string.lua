@@ -12,7 +12,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * ]]
-
 require 'unit_conversion'
 
 function dynamic_light_string(arguments, context, symbology)

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<!-- <ArcGISRelease edition="11.3" patch="0" /> -->
+<!-- <ArcGISRelease edition="11.4" patch="0" /> -->
 <!-- <Comments>Operator options/>
 	<Comments>Rule type A operators
 		equal
@@ -943,6 +943,18 @@
 			<rule type="A" field="WATLEV" operator="equal" value="3"/>
 		</condition>
 	</feature>
+ 
+  <!--New 11.4 NAVLNE, RECTRC, FAIRWY and SVG symbols -->
+  <feature object="NAVLNE" prim="2">
+    <condition functionName="navlne01"/>
+  </feature>
+  <feature object="RECTRC" prim="2">
+    <condition functionName="rectrc01"/>
+  </feature>
+
+  <feature object="FAIRWY" prim="3">
+    <condition functionName="fairwy01"/>
+  </feature>
 
 	<feature object="UWTROC" prim="1">
 		<condition symbolName= "K11b_Rock_uncovers.svg">
@@ -966,30 +978,15 @@
 			<rule type = "A" field = "CATOBS" operator = "equal" value = "7"/>
 		</condition>
 	</feature>
-
+	
+	<!--NEW AT 11.4 WRECK05.LUA. REPLACES ALL PRIM=1 (POINT) SYMBOLS PREVIOUSLY IN THE XML -->
 	<feature object="WRECKS" prim="1">
-		<condition symbolName= "K29_Wreck_notdangerous.svg">
-			<rule type = "A" field = "CATWRK" operator = "equal" value = "1"/>
-		</condition>
-		<condition symbolName= "K25_Wreck_danger_no_depth.svg">
-			<rule type = "A" field = "CATWRK" operator = "equal" value = "2"/>
-		</condition>
-		<condition symbolName= "K31_Foul_ground.svg">
-			<rule type = "A" field = "CATWRK" operator = "equal" value = "3"/>
-		</condition>
-		<condition symbolName= "K25_Wreck_danger_no_depth.svg">
-			<rule type = "A" field = "CATWRK" operator = "equal" value = "4"/>
-		</condition>
-<!-- 	<condition symbolName= "K20_Wreck_showing_mast.svg">
-		<rule type = "A" field = "CATWRK" operator = "equal" value = "4"/>
-		<rule type = "A" field = "WATLEV" operator = "equal" value = "2"/>
-	</condition> -->
-<!-- 	<condition symbolName= "K21_Wreck_uncovers.svg">
-		<rule type = "A" field = "WATLEV" operator = "equal" value = "4"/>
-	</condition> -->
-		<condition symbolName= "K24_Wreck_showing_hull.svg">
-			<rule type = "A" field = "CATWRK" operator = "equal" value = "5"/>
-		</condition>
+		<condition functionName = "wrecks05"/>
+	</feature>
+	
+	<!--NEW AT 11.4 WRECKS05.LUA FOR WRECKS PRIM = 3 (AREAS)-->
+	<feature object="WRECKS" prim="3">
+		<condition functionName="wrecks05"/>
 	</feature>
 
 	<feature object="VEGATN" prim="1">

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="4mm"
+   height="4mm"
+   version="1.1"
+   viewBox="-2 -2 4 4"
+   id="svg17"
+   sodipodi:docname="K27_SweptDepth.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs17" />
+  <sodipodi:namedview
+     id="namedview17"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="85.292145"
+     inkscape:cx="11.003358"
+     inkscape:cy="12.105452"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg17" />
+  <path
+     d="M -1.9857605,1.8938319 H 1.9875442"
+     style="fill:none;stroke:#231f20;stroke-width:0.2;stroke-miterlimit:3.864;stroke-dasharray:none"
+     id="path14" />
+  <path
+     d="m -1.8875443,1.9877493 v -0.60008"
+     style="fill:none;stroke:#231f20;stroke-width:0.2;stroke-miterlimit:3.864;stroke-dasharray:none"
+     id="path15" />
+  <path
+     d="m 1.8843858,1.9906938 v -0.60008"
+     style="fill:none;stroke:#231f20;stroke-width:0.2;stroke-miterlimit:3.864;stroke-dasharray:none"
+     id="path16" />
+</svg>

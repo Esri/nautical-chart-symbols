@@ -12,7 +12,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * ]]
-
 function cblsub02(feature, context, symbology)
 	local collection = symbology.collections[1]
 	local status = feature.attributes:get_list_attribute('STATUS') --list attribute

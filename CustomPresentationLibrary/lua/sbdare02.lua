@@ -12,7 +12,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * ]]
- 
+
 function sbdare02(feature, context, symbology)
 
 	-- get the string of NATQUA and NATSUR from the feature attribute

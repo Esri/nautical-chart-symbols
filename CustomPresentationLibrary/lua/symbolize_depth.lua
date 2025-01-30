@@ -78,6 +78,7 @@ function symbolize_depth(arguments, context, symbology)
 	local uncertained_depth = arguments['uncertained_depth']
 	local depth = arguments['depth']
 
+
 --	Debug.log(tostring(swept_depth) .. ' ' .. tostring(uncertained_depth) .. ' ' .. tostring(depth))
 
 	if(depth == nil) then
@@ -121,6 +122,11 @@ function symbolize_depth(arguments, context, symbology)
 			fraction = 0
 		end
 	end
+	-- uncertained_depth is upright text, not italic (update 11.4)
+	if uncertained_depth then
+		weight = 'medium' 
+	end
+
 
 --	Debug.log(tostring(whole) .. ' ' .. tostring(fraction) .. ' ' .. tostring(depth).. ' ' .. tostring(sign))
 

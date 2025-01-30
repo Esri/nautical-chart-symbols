@@ -12,7 +12,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * ]]
-
 local function IsNone(value) -- June2023 add function
 	return (value == nil or #value == 0)
 end

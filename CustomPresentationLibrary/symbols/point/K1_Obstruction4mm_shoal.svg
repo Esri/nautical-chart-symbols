@@ -1,21 +1,24 @@
-<svg width="3.75mm" height="3.75mm" version="1.1" viewBox="-2 -2 3.75 3.75" xmlns="http://www.w3.org/2000/svg">
- <path d="m-2.0012-0.12519c0-1.0352 0.83907-1.875 1.8745-1.875 1.036 0 1.8755 0.83986 1.8755 1.875 0 1.0352-0.83957 1.875-1.8755 1.875-1.0355 0-1.8745-0.83986-1.8745-1.875" style="fill:#d1ddef"/>
- <circle cx="-.42162" cy="-2.0002" r=".125" style="fill:#231f20;stroke-width:.1461"/>
- <circle cx="1.7551" cy="-.084663" r=".125" style="fill:#231f20;stroke-width:.1461"/>
- <circle cx=".33183" cy="-1.9639" r=".125" style="fill:#231f20;stroke-width:.1461"/>
- <circle cx=".93424" cy="-1.6882" r=".125" style="fill:#231f20;stroke-width:.1461"/>
- <circle cx="1.3999" cy="-1.2165" r=".125" style="fill:#231f20;stroke-width:.1461"/>
- <circle cx="1.6633" cy="-.66272" r=".125" style="fill:#231f20;stroke-width:.1461"/>
- <circle cx="1.6163" cy=".56204" r=".125" style="fill:#231f20;stroke-width:.1461"/>
- <circle cx="1.2669" cy="1.1165" r=".125" style="fill:#231f20;stroke-width:.1461"/>
- <circle cx=".7852" cy="1.5148" r=".125" style="fill:#231f20;stroke-width:.1461"/>
- <circle cx=".16896" cy="1.7502" r=".125" style="fill:#231f20;stroke-width:.1461"/>
- <circle cx="-.56708" cy="1.7186" r=".125" style="fill:#231f20;stroke-width:.1461"/>
- <circle cx="-1.224" cy="1.3836" r=".125" style="fill:#231f20;stroke-width:.1461"/>
- <circle cx="-1.6862" cy=".92128" r=".125" style="fill:#231f20;stroke-width:.1461"/>
- <circle cx="-2.0051" cy="-.23396" r=".125" style="fill:#231f20;stroke-width:.1461"/>
- <circle cx="-1.8454" cy="-.88417" r=".125" style="fill:#231f20;stroke-width:.1461"/>
- <circle cx="-1.5168" cy="-1.4055" r=".125" style="fill:#231f20;stroke-width:.1461"/>
- <circle cx="-.99706" cy="-1.7895" r=".125" style="fill:#231f20;stroke-width:.1461"/>
- <circle cx="-1.9498" cy=".37847" r=".125" style="fill:#231f20;stroke-width:.1461"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="3.9745mm" height="3.1965mm" version="1.1" viewBox="-2 -1.6 3.9745 3.1965" xmlns="http://www.w3.org/2000/svg">
+ <path d="m-1.8444-0.016386c0-0.80854 0.82639-1.4645 1.8462-1.4645 1.0203 0 1.8472 0.65598 1.8472 1.4645 0 0.80854-0.82688 1.4645-1.8472 1.4645-1.0199 0-1.8462-0.65598-1.8462-1.4645" fill="#d1ddef" stroke-width=".87707"/>
+ <g fill="#231f20">
+  <circle cx="-1.7339" cy="-.57315" r=".125" stroke-width=".1461"/>
+  <g stroke-width=".1461">
+   <circle cx="1.8495" cy="-.0089619" r=".125"/>
+   <circle cx=".0084856" cy="-1.475" r=".125"/>
+   <circle cx="1.3556" cy="-1.035" r=".125"/>
+   <circle cx="1.7213" cy="-.58004" r=".125"/>
+   <circle cx="1.3115" cy="1.0564" r=".125"/>
+   <circle cx=".72756" cy="1.362" r=".125"/>
+   <circle cx="-.012755" cy="1.4715" r=".125"/>
+   <circle cx="-.75862" cy="1.3596" r=".125"/>
+   <circle cx="1.7076" cy=".59178" r=".125"/>
+   <circle cx="-1.3212" cy="1.0389" r=".125"/>
+   <circle cx="-1.7105" cy=".59074" r=".125"/>
+   <circle cx="-1.875" cy="-.001733" r=".125"/>
+   <circle cx="-1.411" cy="-1.0007" r=".125"/>
+   <circle cx=".72548" cy="-1.3877" r=".125"/>
+   <circle cx="-.80822" cy="-1.3524" r=".125"/>
+  </g>
+ </g>
 </svg>

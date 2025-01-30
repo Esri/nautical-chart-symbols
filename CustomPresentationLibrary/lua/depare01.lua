@@ -12,7 +12,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * ]]
-
 -- DEPDW;white;0.2800;0.3100;80.000;255;255;255;0.292854  
 -- DEPMD;pale_blue;0.2600;0.2900;65.000;255;255;255;0.287164  
 -- DEPMS;light_blue;0.2300;0.2500;55.000;221;235;247;0.664280  

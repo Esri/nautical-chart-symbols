@@ -12,7 +12,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * ]]
-
 require 'unit_conversion'
 
 function lndelv01(feature, context, symbology)
@@ -40,7 +39,7 @@ function post_symbolize(arguments, context, symbology)
 	local params = --Modifed hjust, vjust, xoffset, yoffset at 11.2
 	{
 		type='Text',
-		fontSize=10,
+		fontSize=7,
 		color='CHBLK',
 		hjust='right',
 		vjust='center',
@@ -64,7 +63,28 @@ function post_symbolize(arguments, context, symbology)
 	return true
 end
 --New function at 11.2 for land elevation contours from s-52 brown to black
+--New at 11.4 land contour elevation label with text rotation.
 function lndelv02(feature, context, symbology)
+	 local elevat = feature.attributes.ELEVAT
 	local collection = symbology.collections[1]
 	collection:add_symbology_instruction({type="SimpleLine", color='black', style='SOLID', width=.2})
+	
+	if (elevat == nil) then return true end
+	
+	local label = {
+        type = 'Text',
+        hjust = 'center',
+        vjust = 'center',
+        xoffset = 0,
+        yoffset = 0,
+        linked = true,
+        fontSize = 7,
+        haloColor = '#f4e8c1',
+        rotateWithFeature=true,
+    }
+    label.text = elevat
+
+    collection:add_symbology_instruction(label)
+
+    return true
 end

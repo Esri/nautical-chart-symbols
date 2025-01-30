@@ -12,22 +12,25 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * ]]
- 
-function contains(value, array)
-	if type(value) == 'table' then
-		for i = 1, #array do
-			if value[array[i]] then
-					return true
-			end
-		end
-	else
-		for i = 1, #array do
-			if array[i] == value then
-				return true
-			end
-		end
-	end
-
-	return false
+--New at 11.4
+function fairwy01(feature, context, symbology)
+    local collection = symbology.collections[1]
+    collection:add_symbology_instruction({type = 'ComplexLine', Name = 'N1_1_RecommendedTrack.svg'})
+	
+	local params = 
+	{
+			type='Text',
+			hjust='center',
+			vjust='center',
+			fontSize=7,
+			xoffset=3,
+			yoffset=-3,
+			color='CHBLK',
+			textGroup=100,
+			rotateWithFeature = true, 
+		}
+		params.text = feature.attributes.OBJNAM
+		collection:add_symbology_instruction(params)
+    
+    return true
 end
-

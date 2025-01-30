@@ -12,7 +12,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * ]]
-
 require 'unit_conversion'
 require 'depare01'
 -- drgare02.lua is new at 11.2 and controls labels, unit conversion, color fill and dashed outline color
@@ -67,11 +66,13 @@ function post_symbolize(arguments, context, symbology)
 		fontSize=10,
 		fontWeight='italic',
 		color='CHBLK',
-		hjust='center',
-		vjust='center',
-		xoffset=0,
-		yoffset=1,
-		textGroup=13,
+		hjust='right',
+		haloColor= '#d1deef',
+		--vjust='top',
+		xoffset=2,
+		--yoffset=-0,
+		textGroup=20,
+		rotateWithFeature=true --New at 11.4 rotateWithFeature. xoffset is the only parameter allowed with polygon geometry
 	}
 
 	local text = 'Dredged to '
@@ -86,8 +87,8 @@ function post_symbolize(arguments, context, symbology)
 		format = '%4.1f fm'
 	end
 
-	params.text = string.format('Dredged to ' .. format, depth)
-
+	--params.text = string.format('Dredged to ' .. format, depth) Modified at 11.4 to reduce label conflicts
+	params.text = string.format(format, depth)
 	collection:add_symbology_instruction(params)
 
 	depare01(arguments, context, symbology)
@@ -103,11 +104,13 @@ function post_symbolize2(arguments, context, symbology)
 		fontSize=10,
 		fontWeight='italic',
 		color='CHBLK',
-		hjust='center',
-		vjust='center',
-		xoffset=0,
-		yoffset=1,
-		textGroup=13,
+		hjust='right',
+		haloColor= '#d1deef',
+		--vjust='top',
+		xoffset=2,
+		--yoffset=-0,
+		textGroup=20,
+		rotateWithFeature=true --New at 11.4 rotateWithFeature. xoffset is the only parameter allowed with polygon geometry
 	}
 
 	local text = 'Maintained depth '
@@ -122,7 +125,8 @@ function post_symbolize2(arguments, context, symbology)
 		format = '%4.1f fm'
 	end
 
-	params.text = string.format('Maintained depth ' .. format, depth)
+	--params.text = string.format('Maintained depth ' .. format, depth) Modified at 11.4 to reduce label conflicts
+	params.text = string.format(format, depth)
 
 	collection:add_symbology_instruction(params)
 
