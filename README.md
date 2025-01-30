@@ -20,7 +20,7 @@ The ServerConfiguration.xml file contains a CustomSymbology boolean to enable or
 ## Requirements
 
 * ArcGIS Server for Windows
-* ArcGIS Maritime Chart Service extension 10.9.1 patch 3 or newer.
+* ArcGIS Maritime Chart Service extension 11.4 or newer.
 * Web browser with access to the Internet
 
 ## Resources
